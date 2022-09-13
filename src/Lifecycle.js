@@ -8,9 +8,10 @@ const Lifecycle = () => {
     const [counter2, setCounter2] = useState(0);
 
     useEffect(() => {
-        console.log('useEffect []');
         return () => {
-            console.log('cleanup useEffect []')
+            setTimeout(()=>{
+                setCounter1(counter1+1)
+            },2000)
         }
     }, [])
 

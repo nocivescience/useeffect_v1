@@ -15,7 +15,7 @@ import getPosts from './helpers/getPosts';
 const FetchCard = () => {
     const [user, setUser] = useState({});
     const [posts, setsPosts] = useState([]);
-    const [silaba, setSilabas]=useState({})
+    // const [silaba, setSilabas]=useState({})
 
     const updateUser = () => {
         getUser()
